@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    background-image: url(img/bg-repeat.jpg);
+    background-size:3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    /* esses dois de baixo e o teste */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ .left h1,p{
+    color: #fff;
+    padding: 10px;
+}
+
+.left h1 {
+font-weight: 900;
+text-transform: uppercase;
+font-size:30px;
+}
+
+.left .paragrafo{
+    width: 400px;
+    height: 100px;
+}
+
+.left p {
+    font-weight: 400;
+    font-size: 20px;
+} 
+
+.right .form{
+    width: 400px;
+    height: 425px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.right .form .form-control{
+    padding: 10px;
+    margin-bottom: 14px;
+    position: relative;
+}
+
+.right .form .form-control input{
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.right .form textarea{
+resize: none;
+border-radius: 5px;
+}
+
+.right .form .form-control input::placeholder, textarea::placeholder{
+    color:#A8A8A8;
+    font-weight: 700;
+}
+
+
+.form-control small{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    margin-bottom: -10px;
+    margin-left: 10px;
+    color: red;
+    visibility: hidden;
+}
+
+.form p{
+    color: #000;
+    padding: 10px;
+}
+
+.form button{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    background-color: #3CCC87;
+    border-radius: 5px;
+    border: none;
+}
+
+.form button:hover{
+    opacity: 0.8;
+}
+
+
+.form-control.success input{
+    border: solid 3px;
+    border-color: #00C22B;
+}
+
+.form-control.error input{
+    border: solid 3px;
+    border-color: #F52E2E;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color: #F52E2E;
+}
+
+.form-control.error textarea {
+    border: 2px solid;
+    border-color: #F52E2E;
+}
+
+.form-control.success textarea {
+    border: 2px solid;
+    border-color: #00C22B;
+}
+
+.icon{
+    position: absolute;
+    font-size: 25px;
+    bottom: 12%;
+    left: 59%;
+    z-index: 1;
+    visibility: hidden;
+    color: #fff;
+} 
+
+.icon.visible{
+    visibility: visible;
+}

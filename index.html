@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário DevQuest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="left">
+        <div class="titulo">
+            <h1>Ficou com Dúvida? <br> Nos mande uma mensagem!</h1>
+        </div>
+        
+        <div class="paragrafo">
+            <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </div>
+    </div>
+
+    <div class="right">
+        <form class="form" id="form">
+            <div class="form-control">
+                <input type="text" id="username" placeholder="Nome Completo *">
+                <small>Campo obrigatório</small>
+            </div>
+
+            <div class="form-control">
+                <input type="email" id="email" placeholder="Email *">
+                <small>Campo obrigatório</small>
+            </div>
+
+            <div class="form-control">
+                <input type="tel" id="tel" placeholder="Telefone *">
+                <small>Campo obrigatório</small>
+            </div>
+
+            <div class="form-control">
+                <textarea id="textArea" rows="5" cols="46" placeholder="Mensagem *"></textarea>
+                <small>Campo obrigatório</small>
+            </div>
+
+            <p>*campos obrigatórios</p>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <div class="icon" id="icon">
+        <span>Formulário enviado com sucesso! </span>
+        <i class="fa-solid fa-thumbs-up"></i>
+    </div>
+
+    <script src="https://kit.fontawesome.com/2a6113b02b.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
